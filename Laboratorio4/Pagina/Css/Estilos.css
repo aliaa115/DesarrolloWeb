@@ -1,0 +1,70 @@
+body{ background-color:#4abbea }
+div{
+    background-color: black;;
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1{
+    position: absolute;
+    padding: 1%;
+    top: 500px;
+    bottom: 0;
+    left: 300px;
+    right: 100%;
+}
+.div2{
+    color: papayawhip;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    float: left;
+}
+.div3{
+    color: aqua;
+    position: absolute;
+    top: 10em;
+    bottom: 20%;
+    right: 0;
+    left: 20em;
+}
+.div3_1{
+    color: aquamarine;
+    position: relative;
+    float: right;
+    top: 0;
+    bottom: 0px;
+    right: 0px;
+    left: 400px;
+}
+.div4{
+    position: relative;
+    top: -25px;
+    left: -32px;
+}
+.div5{
+    position: relative;
+    padding: 10%;
+    border: solid, 20px, #555555;
+}
+.div6{
+    position: relative;
+}
+.div7{
+    position: relative;
+}
+.div8{
+    position: relative;
+}
+.div9{
+    position: relative;
+}
+.div10{
+    position: relative;
+}
