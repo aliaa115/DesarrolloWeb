@@ -11,6 +11,7 @@ header{
     overflow: hidden;
     top: 0%;
     position: sticky;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header nav ul{
@@ -19,6 +20,7 @@ header nav ul{
     position: sticky;
     text-align: center;
     margin-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header nav ul li{

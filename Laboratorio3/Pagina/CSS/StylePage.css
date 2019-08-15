@@ -12,6 +12,7 @@ header {
     left: 0;
     width: 100%;
     background-color: black;
+    font-family: 'Courier New';
 } 
 
 a {
@@ -85,7 +86,7 @@ button {
     width: 40px;
     max-width: 50%;
 }	
-
+/*
 input {
 	background: black;	
 	border: none;
@@ -93,14 +94,14 @@ input {
 	color: gray;
 	display: block;
 	float: left;
-	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-family: 'Courier New';
 	font-size: 15px;
 	font-weight: 400;
     height: 45px;
     width: 50%;
 	padding: 0 20px;
     max-width: 100%;
-}
+}*/
 
 footer { 
     background-color: black; 

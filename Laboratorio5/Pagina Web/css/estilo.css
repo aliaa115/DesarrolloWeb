@@ -1,14 +1,23 @@
 
-head{
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header{
     width: 100%;
+    text-align: center;
+    font-family: 'Courier New';
+    width: 100%;
+    background-color: aqua;
     text-align: center;
 }
 
 nav{
     margin-left: 0%;
+    width: 100%;
     overflow: hidden;
-    background-color: aqua;
-    
+    padding: 10px;
 }
 
 ul{
@@ -20,28 +29,34 @@ li {
     margin-left: 10px;
 }
 
+br{
+    font-size: 10px;
+}
+
 .slider {
     width: 100%;
-    height: 200px;
-	margin: auto;
-	overflow: hidden;
+    overflow: hidden;
 }
+
 .slider ul {
 	display: flex;
-	padding: 0;
-	width: 200%;
-	
-	animation: cambio 20s infinite alternate linear;
+    width: 400%;
+	animation: cambio 10s infinite alternate linear;
+    margin: 0;
 }
 
 .slider li {
 	width: 100%;
 	list-style: none;
     background-color: white;
+    margin: 0;
 }
 
 .slider img {
-    width: 20%;
+    max-width: 100%;
+    width: 90%;
+    height: 200px;
+    margin: 0;
 }
 
 @keyframes cambio {
@@ -59,12 +74,22 @@ li {
 }
 
 section{
+    float: left;
     height: 50%;
+    background: aliceblue;
+    width: 60%;
+    padding: 2%;
+    display: inline-block;
 }
 
-aside{
+article aside{
     float: right;
+    position: relative;
+    right: 0;
+    width: 30%;
     height: 100%;
+    background: whitesmoke;
+    padding: 2%;
 }
 
 footer{
@@ -72,4 +97,5 @@ footer{
     background-color: aqua;
     width: 100%;
     bottom: 0px;
+    text-align: center;
 }
