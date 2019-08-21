@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(208, 243, 243);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body header{
+    width: 100%;
+    text-align: center;
+    font-family: 'Courier New';
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+}
+
+body header h1{
+    font-style: initial;
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+body header nav ul{
+    margin-left: 0%;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    list-style: none;
+}
+
+body header nav ul li{
+    font-size: 110%;
+    margin-left: 10%;
+    float: left;
+    padding: 2%;
+}
+
+body header nav ul li:hover{
+    background-color: aquamarine;
+}
+
+.Cuerpo{
+    width: 100%;height: 100%;
+}
+
+.Cuerpo article{
+    background-color: rgb(169, 202, 191);
+    float: left;
+    height: 100%;
+    width: 60%;
+    padding: 1%;
+    margin-bottom: 20px;
+}
+.Cuerpo article .html div img{
+    width: 20%;
+}
+
+.Cuerpo article .css div img{
+    width: 20%;
+}
+
+.Cuerpo aside{
+    background-color: rgb(179, 243, 222);
+    float: right;
+    height: 100%;
+    width: 30%;
+    padding: 1%;
+}
+
+.Cuerpo aside img{
+    width: 100%;
+}
+
+body footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: aqua;
+    height: 40px;
+}
+
+body footer br{
+    font-size: 1px;
+}
