@@ -1,0 +1,83 @@
+
+body  {
+    left: 5%;
+    right: 5%;
+    background: #f0ffff;
+    align-items: center;
+}
+
+header{
+    background-color: aquamarine;
+    overflow: hidden;
+    top: 0%;
+    position: sticky;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header nav ul{
+    list-style: none;
+    overflow: hidden;
+    position: sticky;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+header nav ul li a:hover{
+    background: aqua;
+}
+.main {
+    width: 100%;height: 100%;
+    text-align: justify;
+    background: #f0ffff;
+}
+
+.main .articles{
+    margin-top: 20px;
+    width: 60%;
+    float: left;
+    display: block;
+    background: white;
+    padding: 10px;
+}
+
+.main .articles article{
+    float: left;
+    left: 10px;
+    margin: 20px;
+    background: aliceblue;
+    padding: 10px;
+}
+
+.main aside{
+    margin-top: 20px;
+    float: right;
+    width: 25%;
+    background:aqua;
+    padding: 20px;
+}
+
+footer{
+    position: fixed;
+    position: sticky;
+    bottom: 0%;
+    text-align: center;
+    width: 100%;
+    background: black;
+    color: white;
+}
