@@ -1,0 +1,20 @@
+JavaScript
+    Estructura
+        sintaxis basica:
+        variables   
+        operadores
+            arit[+,-,*,/,%]
+            logic[&&,||, |]
+            relacion[<,>,<=,>=,==]
+        condicionales
+        ciclos 
+        arreglos/vectores
+        casos
+        funciones[procedimientos]
+
+        POO 
+            clases     |         encapsulamiento
+            metodos    | \       polimorfismo
+            atributos  | /       herencia
+                       |         instanciacion
+    
