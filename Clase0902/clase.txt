@@ -1,0 +1,45 @@
+Investigacion:
+    Angular
+        Html
+        css
+        JS
+            BackEnd
+    React
+
+Bases de Datos
+        Celacionales
+            insert
+            delete
+            update
+            select
+
+NODE JS No relacionales
+            data{  key,value}
+    -post
+    -get
+    -patch
+    -update
+
+JS:
+    push
+    pop
+
+
+
+Tarea para clase:
+    JavaScript:
+        Introduccion
+        Variables
+        Tipos de Datos 
+        Arreglos 
+        Metodos y propiedades
+        Condicionales
+        Ciclo For
+        Ciclo While
+        Funciones
+        Formularios
+        Scope de JavaScript
+        Metodos y propiedades para cadenas de texto
+        Introduccion a DOM [Documento Object Modem]
+
+        
