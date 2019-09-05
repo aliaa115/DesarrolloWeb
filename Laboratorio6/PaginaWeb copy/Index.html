@@ -6,6 +6,16 @@
         <link rel="stylesheet" type="text/css" href="CSS/Estilo.css">
     </head>
     <body>
+        <h1>
+            Laboratorio 6 de Desarrollo Web
+        </h1>
+
+        <section class = "Botones">
+            <input type="button" id="Iniciar" class="MostrarOriginal" value="Iniciar" onclick="verImagen()">
+            <input type="button" id="Sig" class="sigiente" value=" >> " onclick="pasoAPaso()">
+            <input type="button" id="Ult" class="final" value=" >>| " onclick="bubbleSort()">
+            <input type="button" id="Recargar" class="Recargar" value=" Reload " onclick="recargar()">
+        </section>
 
         <section>
             <div id="div1">
@@ -54,8 +64,12 @@
                 <p id="p15"></p>
             </div>
         </section>
-        <br>
         <section>
+            <p id="proceso"></p>
+        </section>
+
+        <br>
+        <section class="jsEstilo">
                 <script src="js/script.js"></script>
         </section>
     </body>
