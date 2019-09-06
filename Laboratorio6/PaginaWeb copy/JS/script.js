@@ -4,41 +4,24 @@ var boton2 = document.getElementById("Sig");
 var boton3 = document.getElementById("Ult");
 var boton4 = document.getElementById("Recargar");
 
-var valor1 = document.getElementById("p1");
-var valor2 = document.getElementById("p2");
-var valor3 = document.getElementById("p3");
-var valor4 = document.getElementById("p4");
-var valor5 = document.getElementById("p5");
-var valor6 = document.getElementById("p6");
-var valor7 = document.getElementById("p7");
-var valor8 = document.getElementById("p8");
-var valor9 = document.getElementById("p9");
-var valor10 = document.getElementById("p10");
-var valor11 = document.getElementById("p11");
-var valor12 = document.getElementById("p12");
-var valor13 = document.getElementById("p13");
-var valor14 = document.getElementById("p14");
-var valor15 = document.getElementById("p15");
+var botonMax = document.getElementById("botMax");
+var botonMin = document.getElementById("botMin");
 
-var pilar1 = document.getElementById("div1");
-var pilar2 = document.getElementById("div2");
-var pilar3 = document.getElementById("div3");
-var pilar4 = document.getElementById("div4");
-var pilar5 = document.getElementById("div5");
-var pilar6 = document.getElementById("div6");
-var pilar7 = document.getElementById("div7");
-var pilar8 = document.getElementById("div8");
-var pilar9 = document.getElementById("div9");
-var pilar10 = document.getElementById("div10");
-var pilar11 = document.getElementById("div11");
-var pilar12 = document.getElementById("div12");
-var pilar13 = document.getElementById("div13");
-var pilar14 = document.getElementById("div14");
-var pilar15 = document.getElementById("div15");
+var botonConpuerta = document.getElementById("botComp");
+
+var divMax = document.getElementById("divMax");
+var divMax = document.getElementById("divMax");
+
+var pMax = document.getElementById("pMax");
+var pMax = document.getElementById("pMax");
 
 var proceso = document.getElementById("proceso");
 
-
+var bloquearBoton = function(estado, color1, color2, boton){
+  boton.disabled = estado;
+  boton.style.backgroundColor = color1;
+  boton.style.color = color2;
+}
 
 var alertaNum = function(){
     var randomArr = Array.from({length: 15}, () => Math.floor(Math.random() * 100));
@@ -60,18 +43,12 @@ var pasoAPaso = function(){
   var arr = returnLista;
   const l = arr.length;
   if(i == (l-1)){
-    boton2.disabled = true;
-    boton2.style.backgroundColor = 'gray';
-    boton2.style.color = 'black';
-
-    boton3.disabled = true;
-    boton3.style.backgroundColor = 'gray';
-    boton3.style.color = 'black';
-
-    boton4.disabled = false;
-    boton4.style.backgroundColor = 'black';
-    boton4.style.color = 'cadetblue';
-
+    bloquearBoton(true, 'gray', 'black', boton1);
+    bloquearBoton(true, 'gray', 'black', boton2);
+    bloquearBoton(true, 'gray', 'black', boton3);
+    bloquearBoton(false, 'black', 'cadetblue', boton4);
+    bloquearBoton(false, 'black', 'cadetblue', botonMin);
+    bloquearBoton(false, 'black', 'cadetblue', botonMax); 
   }
   for (let j =  0; j < l - 1 - i; j++ ) {
     if ( arr[ j ] > arr[ j + 1 ] ) {
@@ -80,24 +57,19 @@ var pasoAPaso = function(){
         
     }
   }
-        setPilar(arr);
+  setPilar(arr);
   returnLista = arr;
   intI++;
 }
 
 var bubbleSort = function(){
 
-  boton2.disabled = false;
-  boton2.style.backgroundColor = "gray";
-  boton2.style.color = 'black';
-
-  boton3.disabled = false;
-  boton3.style.backgroundColor = 'gray';
-  boton3.style.color = 'black';
-
-  boton4.disabled = false;
-  boton4.style.backgroundColor = 'black';
-  boton4.style.color = 'cadetblue';
+  bloquearBoton(true, 'gray', 'black', boton1);
+  bloquearBoton(true, 'gray', 'black', boton2);
+  bloquearBoton(true, 'gray', 'black', boton3);
+  bloquearBoton(false, 'black', 'cadetblue', boton4);
+  bloquearBoton(false, 'black', 'cadetblue', botonMin);
+  bloquearBoton(false, 'black', 'cadetblue', botonMax);
 
   var arr = listaMov;
   const l = arr.length;
@@ -120,94 +92,50 @@ var bubbleSort = function(){
   var lista = alertaNum();
   var listaMov;
   var listaInic;
-  
-  boton2.disabled = true;
-  boton2.style.backgroundColor = 'gray';
-  boton2.style.color = 'black';
 
-  boton3.disabled = true;
-  boton3.style.backgroundColor = 'gray';
-  boton3.style.color = 'black';
-
-  boton4.disabled = true;
-  boton4.style.backgroundColor = 'gray';
-  boton4.style.color = 'black';
-
+  bloquearBoton(false, 'black', 'cadetblue', boton1);
+  bloquearBoton(true, 'gray', 'black', boton2);
+  bloquearBoton(true, 'gray', 'black', boton3);
+  bloquearBoton(true, 'gray', 'black', boton4);
+  bloquearBoton(true, 'gray', 'black', botonMin);
+  bloquearBoton(true, 'gray', 'black', botonMax);
+  bloquearBoton(false, 'black', 'cadetblue', botonConpuerta);
 
 var verImagen = function(){
   console.log(listaInic);
   console.log(returnLista);
-  boton1.disabled = true;
-  boton1.style.backgroundColor = 'gray';
-  boton1.style.color = 'black';
-
-  boton2.disabled = false;
-  boton2.style.backgroundColor = 'black';
-  boton2.style.color = 'cadetblue';
-
-  boton3.disabled = false;
-  boton3.style.backgroundColor = 'black';
-  boton3.style.color = 'cadetblue';
-
+  bloquearBoton(true, 'gray', 'black', boton1);
+  bloquearBoton(false, 'black', 'cadetblue', boton2);
+  bloquearBoton(false, 'black', 'cadetblue', boton3);
+  bloquearBoton(true, 'gray', 'black', boton4);
+  bloquearBoton(false, 'black', 'cadetblue', botonMax);
+  bloquearBoton(false, 'black', 'cadetblue', botonMin);
 
   setPilar(listaInic);
 }
 
-
-
-var recargar = function() {
-    location.reload();
+var pilar = function(val, altura, color, pilar, texto){
+  texto.innerText = val;
+  pilar.style.height = altura;
+  pilar.style.backgroundColor = color;
 }
 
-
-
 var setPilar = function(arr){
-
   var color = "#";
   var int = 10477055;
-  valor1.innerText = arr[0];
-  pilar1.style.height = altura(arr[0]);
-  pilar1.style.backgroundColor = color+(int - arr[0]).toString(16);
-  valor2.innerText = arr[1];
-  pilar2.style.height = altura(arr[1]);
-  pilar2.style.backgroundColor = color + (int - arr[1]).toString(16);
-  valor3.innerText = arr[2];
-  pilar3.style.height = altura(arr[2]);
-  pilar3.style.backgroundColor = color + (int - arr[2]).toString(16);
-  valor4.innerText = arr[3];
-  pilar4.style.height = altura(arr[3]);
-  pilar4.style.backgroundColor = color + (int - arr[3]).toString(16);
-  valor5.innerText = arr[4];
-  pilar5.style.height = altura(arr[4]);
-  pilar5.style.backgroundColor = color + (int - arr[4]).toString(16);
-  valor6.innerText = arr[5];
-  pilar6.style.height = altura(arr[5]);
-  pilar6.style.backgroundColor = color + (int - arr[5]).toString(16);
-  valor7.innerText = arr[6];
-  pilar7.style.height = altura(arr[6]);
-  pilar7.style.backgroundColor = color + (int - arr[6]).toString(16);
-  valor8.innerText = arr[7];
-  pilar8.style.height = altura(arr[7]);
-  pilar8.style.backgroundColor = color + (int - arr[7]).toString(16);
-  valor9.innerText = arr[8];
-  pilar9.style.height = altura(arr[8]);
-  pilar9.style.backgroundColor = color + (int - arr[8]).toString(16);
-  valor10.innerText = arr[9];
-  pilar10.style.height = altura(arr[9]);
-  pilar10.style.backgroundColor = color + (int - arr[9]).toString(16);
-  valor11.innerText = arr[10];
-  pilar11.style.height = altura(arr[10]);
-  pilar11.style.backgroundColor = color + (int - arr[10]).toString(16);
-  valor12.innerText = arr[11];
-  pilar12.style.height = altura(arr[11]);
-  pilar12.style.backgroundColor = color + (int - arr[11]).toString(16);
-  valor13.innerText = arr[12];
-  pilar13.style.height = altura(arr[12]);
-  pilar13.style.backgroundColor = color + (int - arr[12]).toString(16);
-  valor14.innerText = arr[13];
-  pilar14.style.height = altura(arr[13]);
-  pilar14.style.backgroundColor = color + (int - arr[13]).toString(16);
-  valor15.innerText = arr[14];
-  pilar15.style.height = altura(arr[14]);
-  pilar15.style.backgroundColor = color + (int - arr[14]).toString(16);
+  pilar(arr[0],  altura(arr[0]),  color+(int - arr[0]).toString(16),  document.getElementById("div1"),  document.getElementById("p1"));
+  pilar(arr[1],  altura(arr[1]),  color+(int - arr[1]).toString(16),  document.getElementById("div2"),  document.getElementById("p2"));
+  pilar(arr[2],  altura(arr[2]),  color+(int - arr[2]).toString(16),  document.getElementById("div3"),  document.getElementById("p3"));
+  pilar(arr[3],  altura(arr[3]),  color+(int - arr[3]).toString(16),  document.getElementById("div4"),  document.getElementById("p4"));
+  pilar(arr[4],  altura(arr[4]),  color+(int - arr[4]).toString(16),  document.getElementById("div5"),  document.getElementById("p5"));
+  pilar(arr[5],  altura(arr[5]),  color+(int - arr[5]).toString(16),  document.getElementById("div6"),  document.getElementById("p6"));
+  pilar(arr[6],  altura(arr[6]),  color+(int - arr[6]).toString(16),  document.getElementById("div7"),  document.getElementById("p7"));
+  pilar(arr[7],  altura(arr[7]),  color+(int - arr[7]).toString(16),  document.getElementById("div8"),  document.getElementById("p8"));
+  pilar(arr[8],  altura(arr[8]),  color+(int - arr[8]).toString(16),  document.getElementById("div9"),  document.getElementById("p9"));
+  pilar(arr[9],  altura(arr[9]),  color+(int - arr[9]).toString(16),  document.getElementById("div10"), document.getElementById("p10"));
+  pilar(arr[10], altura(arr[10]), color+(int - arr[10]).toString(16), document.getElementById("div11"), document.getElementById("p11"));
+  pilar(arr[11], altura(arr[11]), color+(int - arr[11]).toString(16), document.getElementById("div12"), document.getElementById("p12"));
+  pilar(arr[12], altura(arr[12]), color+(int - arr[12]).toString(16), document.getElementById("div13"), document.getElementById("p13"));
+  pilar(arr[13], altura(arr[13]), color+(int - arr[13]).toString(16), document.getElementById("div14"), document.getElementById("p14"));
+  pilar(arr[14], altura(arr[14]), color+(int - arr[14]).toString(16), document.getElementById("div15"), document.getElementById("p15"));
 }

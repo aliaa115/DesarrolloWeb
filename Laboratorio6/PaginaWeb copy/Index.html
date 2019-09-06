@@ -14,7 +14,12 @@
             <input type="button" id="Iniciar" class="MostrarOriginal" value="Iniciar" onclick="verImagen()">
             <input type="button" id="Sig" class="sigiente" value=" >> " onclick="pasoAPaso()">
             <input type="button" id="Ult" class="final" value=" >>| " onclick="bubbleSort()">
-            <input type="button" id="Recargar" class="Recargar" value=" Reload " onclick="recargar()">
+            <input type="button" id="Recargar" class="Recargar" value=" Reload " onclick="location.reload()">
+        </section>
+        <section class = "Botones">
+            <input type="button" id="botMax" class="" value=" MAX " onclick="pMax.innerText = Math.max.apply(null, listaInic)">
+            <input type="button" id="botMin" class="" value=" MIN " onclick="pMin.innerText = Math.min.apply(null, listaInic)">
+            <input type="button" id="botComp" class="" value=" Compuerta?? " onclick="">
         </section>
 
         <section>
@@ -65,7 +70,14 @@
             </div>
         </section>
         <section>
-            <p id="proceso"></p>
+            <div id="divMax">
+                    <h2>MAXIMO</h2>
+                    <p id="pMax"></p>
+            </div>
+            <div id="divMin">
+                    <h2>MINIMO</h2>
+                    <p id="pMin"></p>
+            </div>
         </section>
 
         <br>

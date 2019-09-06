@@ -19,6 +19,7 @@ h1{
 }
 
 div{
+    position: block;
     margin-top: 0px;
     float: left;
     width: 4.6667%;
@@ -27,6 +28,16 @@ div{
     background-color: whitesmoke;
     color: black;
     animation: 10s;
+}
+
+#divMax{
+    width: 100%;
+    background-color: aquamarine;
+}
+
+#divMin{
+    width: 100%;
+    background-color: aquamarine;
 }
 
 .jsEstilo{
