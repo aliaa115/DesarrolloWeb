@@ -139,3 +139,52 @@ var setPilar = function(arr){
   pilar(arr[13], altura(arr[13]), color+(int - arr[13]).toString(16), document.getElementById("div14"), document.getElementById("p14"));
   pilar(arr[14], altura(arr[14]), color+(int - arr[14]).toString(16), document.getElementById("div15"), document.getElementById("p15"));
 }
+
+var getVal = function(valor){
+  console.log(valor);
+  return document.getElementById(valor).innerText;
+
+}
+
+var ponerValor = function(x, y, and, or){
+  var suma = parseInt(x) + parseInt(y);
+  var mult = parseInt(x) * parseInt(y);
+  if(suma >= 1) { suma = 1; }
+  document.getElementById(or).innerText = suma;
+  document.getElementById(and).innerText = mult;
+  
+}
+
+var ponerValorNot = function(x, not){
+  var cambiar;
+  if(x == 1) {cambiar = 0;}
+  else if (x == 0) {cambiar = 1;}
+  else {cambiar = "Error"}
+  document.getElementById(not).innerText = cambiar;
+}
+
+var compuertaOperacion = function(){
+  
+  var x1 = getVal("xVal1");
+  var x2 = getVal("xVal2");
+  var x3 = getVal("xVal3");
+  var x4 = getVal("xVal4");
+
+  var y1 = getVal("yVal1");
+  var y2 = getVal("yVal2");
+  var y3 = getVal("yVal3");
+  var y4 = getVal("yVal4");
+
+  ponerValor(x1, y1, "op1And", "op1Or");
+  ponerValor(x2, y2, "op2And", "op2Or");
+  ponerValor(x3, y3, "op3And", "op3Or");
+  ponerValor(x4, y4, "op4And", "op4Or");
+
+}
+
+var compuertaNot = function(){
+  var x1 = getVal("xVal1NOT");
+  ponerValorNot(x1 , "op1Not");
+  var x2 = getVal("xVal2NOT");
+  ponerValorNot(x2 , "op2Not");
+}

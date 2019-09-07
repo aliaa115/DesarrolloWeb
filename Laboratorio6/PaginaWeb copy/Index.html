@@ -11,6 +11,9 @@
         </h1>
 
         <section class = "Botones">
+            <h2>
+                Orden de numeros:
+            </h2>
             <input type="button" id="Iniciar" class="MostrarOriginal" value="Iniciar" onclick="verImagen()">
             <input type="button" id="Sig" class="sigiente" value=" >> " onclick="pasoAPaso()">
             <input type="button" id="Ult" class="final" value=" >>| " onclick="bubbleSort()">
@@ -19,7 +22,6 @@
         <section class = "Botones">
             <input type="button" id="botMax" class="" value=" MAX " onclick="pMax.innerText = Math.max.apply(null, listaInic)">
             <input type="button" id="botMin" class="" value=" MIN " onclick="pMin.innerText = Math.min.apply(null, listaInic)">
-            <input type="button" id="botComp" class="" value=" Compuerta?? " onclick="">
         </section>
 
         <section>
@@ -78,6 +80,77 @@
                     <h2>MINIMO</h2>
                     <p id="pMin"></p>
             </div>
+        </section>
+                <br>
+        <section>
+                <center>
+           <h2>
+                Compuertas Logicas:
+            </h2>
+            <input type="button" id="botComp" class="" value=" AND - OR " onclick="compuertaOperacion()">
+                <br>
+                <table id="TablaCompAND">
+                    <tr id="TituloAnd">
+                        <td id="xTitulo"><p>X</p></td>
+                        <td id="Titulo"><p>Y</p></td>
+                        <td id="AND"><p>AND</p></td>
+                        <td id="OR"><p>OR</p></td>
+                    </tr>
+                    <tr>
+                        <td><p id="xVal1">1</p></td>
+                        <td><p id="yVal1">1</p></td>
+                        <td><p id="op1And"></p></td>
+                        <td><p id="op1Or"></p></td>
+                    </tr>
+                    <tr>
+                        <td><p id="xVal2">1</p></td>
+                        <td><p id="yVal2">0</p></td>
+                        <td><p id="op2And"></p></td>
+                        <td><p id="op2Or"></p></td>
+                    </tr>
+                    <tr>
+                        <td id="xVal3"><p>0</p></td>
+                        <td id="yVal3"><p>1</p></td>
+                        <td id="op3And"><p></p></td>
+                        <td id="op3Or"><p></p></td>
+                    </tr>
+                    <tr>
+                        <td id="xVal4"><p>0</p></td>
+                        <td id="yVal4"><p>0</p></td>
+                        <td id="op4And"><p></p></td>
+                        <td id="op4Or"><p></p></td>
+                    </tr>
+                </table>
+                <br>
+                <input type="button" id="botComp" class="" value=" NOT " onclick="compuertaNot()">
+                <br>
+                <table id="TablaCompNot">
+                    <tr id="TituloAnd">
+                        <td id="xTituloNOT">
+                            <p>X</p>
+                        </td>
+                        <td id="NOT">
+                            <p>NOT</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="xVal1NOT">
+                            <p>1</p>
+                        </td>
+                        <td id="op1Not">
+                            <p></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="xVal2NOT">
+                            <p>0</p>
+                        </td>
+                        <td id="op2Not">
+                            <p></p>
+                        </td>
+                    </tr>
+                </table>
+            </center>
         </section>
 
         <br>

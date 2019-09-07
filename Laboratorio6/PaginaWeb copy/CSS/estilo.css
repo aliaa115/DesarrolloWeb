@@ -1,8 +1,7 @@
-.draw{bottom:173px}#draw-status p{color:#000}#draw-warn p{color:#ffa824}#draw-err p{color:red}#drawgraph{height:530px;width:700px;margin:0 auto;margin-left:-350px;margin-top:-215px}#drawgraph #main{padding:5px 15px}#drawgraph-actions{padding-left:50px;bottom:200px;left:200px;float:left}#drawgraph-actions p{padding:10px;cursor:pointer;float:left}#drawgraph-actions #drawgraph-form{padding:10px;cursor:pointer;float:left}#drawgraph-actions p:hover{background:#000;color:#fff}#drawgraph-actions p:first-of-type{padding-top:10px}#drawgraph-actions p:last-of-type{padding-bottom:10px}#drawgraph-actions-hide{bottom:60px;left:0;padding-left:14px;padding-right:15px}
 
 body{
     background-color: whitesmoke;
-    color: #fff;
+    color: black;
     text-align: center;
 }
 
@@ -11,6 +10,15 @@ section{
     margin-top: 0;
     width: 100%;
 }
+
+
+h2{
+    color: rgb(154, 158, 214);
+    font-size: 200%;
+    text-shadow: 10px 5px 0px  rgb(188, 251, 255),
+                 -10px -5px 0px  rgb(188, 251, 255);
+}
+
 h1{
     color: black;
     font-size: 400%;
@@ -49,4 +57,18 @@ input{
     font-size: 200%;
     color: cadetblue;
     background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+    background-color: cadetblue;
+    font-size:50px;
+    font-family:Verdana,Helvetica;
+    text-align: center;
+}
+
+td {
+    border: black 5px solid;
 }
