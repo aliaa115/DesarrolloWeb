@@ -24,8 +24,8 @@
   .footer { order: 4; }
 }
  
-.header { background: #581845; }
-.articulo { background: #FFC300; }
-.izquierda { background: #900C3F; }
-.derecha { background: #C70039; }
-.footer { background: #DAF7A6; }
+.header { background: #184e58; }
+.articulo { background: rgb(0, 81, 255); }
+.izquierda { background: rgb(12, 144, 104); }
+.derecha { background: rgb(36, 0, 199); }
+.footer { background: rgb(166, 181, 247); }
