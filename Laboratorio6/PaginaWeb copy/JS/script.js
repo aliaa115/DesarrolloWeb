@@ -78,9 +78,6 @@ var bubbleSort = function(){
       if ( arr[ j ] > arr[ j + 1 ] ) {
         [ arr[ j ], arr[ j + 1 ] ] = [ arr[ j + 1 ], arr[ j ] ];
           console.log(arr);
-          
-
-          setTimeout(" ", 1000);
       }
     }
   }
@@ -187,4 +184,5 @@ var compuertaNot = function(){
   ponerValorNot(x1 , "op1Not");
   var x2 = getVal("xVal2NOT");
   ponerValorNot(x2 , "op2Not");
+  document.write("<div>hola</div>");
 }

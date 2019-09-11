@@ -36,33 +36,33 @@
   }
   
   @media all and (min-width: 500px) {
-    .aside { flex: 2 1; }
+    .aside { flex: 7 2; }
   }
   
   @media all and (min-width: 300px) {
-    .articulo { flex:5 0; }
+    .articulo { flex:4 0; }
     .izquierda { order: 1; }
     .articulo { order: 2; }
     .derecha { order: 3; }
-    .footer { order: 4; }
   }
    
   @media all and (min-width: 600px) {
     .titulo {order: 1;}
     .menu { order: 2; }
+    .footer { order: 3; }
   }
   
   @media all and (min-width: 600px) {
     .titulo {order:1;}
     .inicio { flex: 0 0; }
-    .iniciarSesion { flex: 0 01; }
+    .iniciarSesion { flex: 0 0; }
     .registrarse { flex: 0 2; }
   }
 
   .header { background: black; color: white; font-size: 200%; }
   .articulo { background: rgb(114, 159, 255); font-weight: bold; }
   .izquierda { background: rgb(164, 255, 228); font-weight: bold; }
-  .derecha { background: rgb(178, 161, 255); font-weight: bold; }
+  .derecha { background: rgb(164, 255, 228); font-weight: bold; }
   .footer { background: black; color: white; }
 
 .menu{
@@ -90,30 +90,36 @@
 #logInForm{
   background: rgb(57, 160, 230);
   color: white;
-  padding: 50px;
+  padding: 20px;
 }
 
 #TituloLogIn{
   background: rgba(0, 0, 0, 0.144);
   color: white;
   font-size: 300%;
-  padding: 0%;
+  padding: 1px;
 }
 
-#UsuarioPLogIn{
-  background: rgba(0, 0, 0, 0.144);
+#UsuarioPLogIn, #ContraPLogIn{
+  font-family: 'Courier New', Courier, monospace;
+  background: rgba(0, 0, 0, 0.336);
   font-size: 150%;
 }
 
-#ContraPLogIn{
-  background: rgba(0, 0, 0, 0.144);
-  font-size: 150%;
-}
-
-#UsuarioLogIn{
+#UsuarioLogIn, #ContraLogIn{
+  font-family: 'Courier New', Courier, monospace;
   border: 0;
-  background: rgba(0, 0, 0, 0.39);
+  background: rgba(0, 0, 0, 0.562);
   color: white;
-  font-size: 150%;
+  font-size: 250%;
+}
+
+#BotonLogIn{
+  font-family: 'Courier New', Courier, monospace;
+  border: 0;
+  background: rgba(0, 59, 52, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 250%;
+  font-weight: bold;
 }
 
