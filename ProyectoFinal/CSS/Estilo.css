@@ -36,11 +36,11 @@
   }
   
   @media all and (min-width: 500px) {
-    .aside { flex: 7 2; }
+    .aside { flex: 3 2; }
   }
   
   @media all and (min-width: 300px) {
-    .articulo { flex:4 0; }
+    .articulo { flex: 5 0; }
     .izquierda { order: 1; }
     .articulo { order: 2; }
     .derecha { order: 3; }
@@ -80,7 +80,7 @@
     color: white; 
     border: 0;
     padding: 10px;
-    font-size: 60%;
+    font-size: 100%;
 }
 
 .padre{
@@ -123,3 +123,7 @@
   font-weight: bold;
 }
 
+#BotonLogIn:hover{
+  color: rgb(0, 59, 52);
+  background: rgba(255, 255, 255, 0.438);
+}
