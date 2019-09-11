@@ -12,7 +12,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
 
   .menu{
@@ -20,9 +20,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: space-around;
     padding: 10px;
   }
   
+  .header {
+    flex-grow:1;
+    flex-basis:100%; 
+    padding: 10px;
+  }
   .articulo, .izquierda, .derecha, .footer, .iniciarSesion, .inicio, .registrarse {
     flex-grow:1;
     flex-basis:100%; 
@@ -54,9 +60,9 @@
   }
 
   .header { background: black; color: white; font-size: 200%; }
-  .articulo { background: rgb(0, 81, 255); }
-  .izquierda { background: rgb(12, 144, 104); }
-  .derecha { background: rgb(36, 0, 199); }
+  .articulo { background: rgb(114, 159, 255); font-weight: bold; }
+  .izquierda { background: rgb(164, 255, 228); font-weight: bold; }
+  .derecha { background: rgb(178, 161, 255); font-weight: bold; }
   .footer { background: black; color: white; }
 
 .menu{
@@ -74,9 +80,40 @@
     color: white; 
     border: 0;
     padding: 10px;
-    font-size: 100%;
+    font-size: 60%;
 }
 
 .padre{
     font-family: 'Courier New';
 }
+
+#logInForm{
+  background: rgb(57, 160, 230);
+  color: white;
+  padding: 50px;
+}
+
+#TituloLogIn{
+  background: rgba(0, 0, 0, 0.144);
+  color: white;
+  font-size: 300%;
+  padding: 0%;
+}
+
+#UsuarioPLogIn{
+  background: rgba(0, 0, 0, 0.144);
+  font-size: 150%;
+}
+
+#ContraPLogIn{
+  background: rgba(0, 0, 0, 0.144);
+  font-size: 150%;
+}
+
+#UsuarioLogIn{
+  border: 0;
+  background: rgba(0, 0, 0, 0.39);
+  color: white;
+  font-size: 150%;
+}
+
