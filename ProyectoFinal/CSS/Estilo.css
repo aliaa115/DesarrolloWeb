@@ -87,26 +87,26 @@
     font-family: 'Courier New';
 }
 
-#logInForm{
+#logInForm, #signInForm{
   background: rgb(57, 160, 230);
   color: white;
   padding: 20px;
 }
 
-#TituloLogIn{
+#TituloLogIn, #TituloSignIn{
   background: rgba(0, 0, 0, 0.144);
   color: white;
   font-size: 300%;
   padding: 1px;
 }
 
-#UsuarioPLogIn, #ContraPLogIn{
+#UsuarioPLogIn, #ContraPLogIn, #NombrePSingIn, #ApellidoPSingIn, #UsuarioPSignIn, #EmailPSignIn, #EdadPSignIn, #ContraPSignIn{
   font-family: 'Courier New', Courier, monospace;
   background: rgba(0, 0, 0, 0.336);
   font-size: 150%;
 }
 
-#UsuarioLogIn, #ContraLogIn{
+#UsuarioLogIn, #ContraLogIn, #NombreSignIn, #ApellidoSignIn, #UsuarioSignIn, #UsuarioSignIn, #EmailSignIn, #EdadSignIn, #ContraSignIn{
   font-family: 'Courier New', Courier, monospace;
   border: 0;
   background: rgba(0, 0, 0, 0.562);
@@ -114,7 +114,7 @@
   font-size: 250%;
 }
 
-#BotonLogIn{
+#BotonLogIn, #BotonSignIn{
   font-family: 'Courier New', Courier, monospace;
   border: 0;
   background: rgba(0, 59, 52, 0.5);
@@ -123,7 +123,11 @@
   font-weight: bold;
 }
 
-#BotonLogIn:hover{
+#BotonLogIn:hover, #BotonSignIn:hover{
   color: rgb(0, 59, 52);
   background: rgba(255, 255, 255, 0.438);
+}
+
+#MatenerSesion, #labelMantenerSesion{
+  font-size: 200%;
 }
