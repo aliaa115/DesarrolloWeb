@@ -12,9 +12,7 @@
         </h1>
 
         <section id="Resultado">
-            <p id="pResultado">
-                
-            </p>
+            <p id="pResultado">0</p>
         </section>
 
         <section>
@@ -22,29 +20,28 @@
                 <input type="button" id="9" class="boton" value="9" onclick="botNum(9)">
                 <input type="button" id="8" class="boton" value="8" onclick="botNum(8)">
                 <input type="button" id="7" class="boton" value="7" onclick="botNum(7)">
-                <input type="button" id="*" class="boton" value="*" onclick="">
+                <input type="button" id="*" class="boton" value="*" onclick="accionPresionada('*')">
             </section>
             <section class = "Botones">
                 <input type="button" id="6" class="boton" value="6" onclick="botNum(6)">
                 <input type="button" id="5" class="boton" value="5" onclick="botNum(5)">
                 <input type="button" id="4" class="boton" value="4" onclick="botNum(4)">
-                <input type="button" id="-" class="boton" value="-" onclick="restar()">
+                <input type="button" id="-" class="boton" value="-" onclick="accionPresionada('-')">
             </section>
             <section class = "Botones">
                 <input type="button" id="3" class="boton" value="3" onclick="botNum(3)">
                 <input type="button" id="2" class="boton" value="2" onclick="botNum(2)">
                 <input type="button" id="1" class="boton" value="1" onclick="botNum(1)">
-                <input type="button" id="/" class="boton" value="/" onclick="">
+                <input type="button" id="/" class="boton" value="/" onclick="accionPresionada('/')">
             </section>
             <section class = "Botones">
                 <input type="button" id="0" class="boton" value="0" onclick="botNum(0)">
                 <input type="button" id="." class="boton" value="." onclick="botNum('.')">
                 <input type="button" id="=" class="boton" value="=" onclick="mostrarresultado()">
-                <input type="button" id="+" class="boton" value="+" onclick="">
+                <input type="button" id="+" class="boton" value="+" onclick="accionPresionada('+')">
             </section>
             <section class = "Borrar">
                 <input type="button" id="CE" class="borrar" value="CE" onclick="borrar()">
-                <input type="button" id="C" class="borrar" value="C" onclick="borrar()">
             </section>
         </section>
 
