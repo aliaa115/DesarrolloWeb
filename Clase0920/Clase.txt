@@ -1,0 +1,32 @@
+instalacion de bootstrap
+la gid sistema de regilla
+tipografia y textos
+tablas
+formularios
+botones
+imagenes
+helper clases / clases auxiliares
+responsive utilities/ herramientas reponsivas
+iconos / graphics iconos
+dropdown button 
+grupos de botones
+gpupos de inputs
+navs / navegadores
+barra de navegacion
+bread crumbs
+paginacion
+labels / etiquetas
+badget / insignias
+jumbotron
+thumbnail
+mensajers alerta
+barras de progreso
+grupo de lista
+objetos media
+panels / paneles
+ventanaa emergente
+componente scrollspy
+componente collapse
+tabs dinamicas
+slidershow
+
