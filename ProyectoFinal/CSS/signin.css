@@ -42,3 +42,9 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+img{
+  border: 20px solid lightseagreen;
+  padding: 5px;
+  border-radius: 50px 20px;
+}
