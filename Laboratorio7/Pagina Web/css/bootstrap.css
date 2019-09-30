@@ -419,6 +419,18 @@ h6, .h6 {
   line-height: 1.2;
 }
 
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-6 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -6263,12 +6275,14 @@ a.close.disabled {
 .active.carousel-item-right {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
+  transform: translateY(150%);
 }
 
 .carousel-item-prev:not(.carousel-item-right),
 .active.carousel-item-left {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
+  transform: translateY(-150%);
 }
 
 .carousel-fade .carousel-item {
@@ -6315,7 +6329,7 @@ a.close.disabled {
   color: #fff;
   text-align: center;
   opacity: 0.5;
-  transition: opacity 0.15s ease;
+  transition: opacity 0.30s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
