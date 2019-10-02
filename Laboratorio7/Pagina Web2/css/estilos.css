@@ -1,0 +1,23 @@
+.titulo{
+    font-family:cursive;
+}
+
+.tituloInciso{
+    background: rgb(80, 80, 80);
+}
+
+.descriInciso{
+    background: rgb(211, 210, 210);
+}
+
+.imagenPerfil{
+    width: 200px;
+}
+
+.TituloDP{
+    background-color: #eee;
+}
+
+.AreaDP{
+    background-color: rgb(105, 105, 105);
+}
